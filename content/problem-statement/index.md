@@ -6,17 +6,16 @@ editable: true
 share: false
 ---
 
-## Introduction
-
-This page serves as a **Problem and Requirements Document** for the project.  It should be no more than 5 pages long.  It should be done after or in combination with the Data Assessment document.  It should have an initial release after no more than four weeks into the project, and can serve as an interim project report.  It can be refined as the project progresses and the project is better understood.  
-
 ## Motivation
 
-The project advisor should have provided the general context for the project, the kinds of problems that could be addressed using the data available, and the overall motivation for working in this area.  
+Open source runs a lot of the world's critical software systems, but there is much that's unknown in how maintainers, developers and other parts of the software ecosystem function. This project attempts to analyze code commits of open source software repositories, that includes both source code and patch conversations, to better understand them.
 
 ## Problem for the Semester
 
-While the motivation section typically describes the long-term reasons to tackle this project, the problem section should focus on the specific problem and goals selected for the current semester.  It should be a realistic goal that can be accomplished with the resources available, and this typically means the data, the people, the time available.  It is useful to be specific about the initial questions that will be addressed first, because those typically lead to a better understanding of what other questions could be tackled.  This will help establish a clear scope for the project that will give everyone reasonable confidence of what the team can achieve.  It is also very useful to describe what the team is not going to tackle and has agreed to leave for future work.
+* Extract clean messages on the raw data from Linux Kernel Mailing List.
+* Extract keywords from individual messages and patch discussions.
+* Generate a summarization from each individual messages and patch discussions.
+* Leverage the power of large language models to accomplish keyword extraction and summarization.
 
 ## State of the Art
 

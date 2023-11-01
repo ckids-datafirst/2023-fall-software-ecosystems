@@ -8,15 +8,13 @@ sections:
   - block: hero
     content:
       title: |
-        The title of your CDISK project
+        Analyzing Open Source Software Ecosystems
       image:
         filename: welcome.jpg
       text: |
-        This [Fall 2023](https://ckids-datafirst.github.io/website/editions/2023-fall/#dates) [DataFirst project](https://ckids-datafirst.github.io/website/) addressed the problem of [1-sentence problem statement](problem-statement). It uses data about [1-sentence data description](data). Our work focuses on [1-sentence description of approach](approach). Our initial results indicate [1-sentence summary of results](results).
+        This [Fall 2023](https://ckids-datafirst.github.io/website/editions/2023-fall/#dates) [DataFirst project](https://ckids-datafirst.github.io/website/) attempts to [analyze code commits(source code and patch discussions) of open source software to better understand them](problem-statement). It uses data from [Linux Kernel Mailing List](data). Our work focuses on [extracting clean messages from the raw data and performing keyword extraction and summarization on individual messages and patch discussions](approach). Our initial results indicate that [most clean messages can be extracted through regular expression, and keyword extraction and summarization can be accomplished with the help of large language models such as GPT4](results).
 
-        Optional: This project builds on the work of a [previous DataFirst project|link to another project from a previous semester].
-
-        Our data science project endeavors to tackle [problem statement]. Our motivation to address this problem stems from [explain the motivation behind the project, e.g., its potential to improve lives, contribute to a specific field, or drive innovation].
+        Gaining a deeper understanding of OSS ecosystems will enable the open source community to identify potential vulnerabilities, and define better development practices.
 
     design:
       columns: "1"

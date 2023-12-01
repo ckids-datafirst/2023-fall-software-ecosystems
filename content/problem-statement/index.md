@@ -30,6 +30,9 @@ We used certain delimiters and regular expressions to extract clean messages. To
 4) Construct a pipeline(Python script) that takes in the raw data and outputs the clean messages, and extracted keywords and summarizations for each message.
 5) Match each message with its maintainer group.
 6) Implement functions to perform keyword extraction and summarization on a list of messages.
+<p align="center">
+  <img src="workflow.png" />
+</p>
 
 ## Use Case Scenario
 

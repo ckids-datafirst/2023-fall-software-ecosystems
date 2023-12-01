@@ -30,6 +30,9 @@
 &lt;li>Match each message with its maintainer group.&lt;/li>
 &lt;li>Implement functions to perform keyword extraction and summarization on a list of messages.&lt;/li>
 &lt;/ol>
+&lt;p align="center">
+&lt;img src="workflow.png" />
+&lt;/p>
 &lt;h2 id="use-case-scenario">Use Case Scenario&lt;/h2>
 &lt;p>Maintainers of open source software can use our project to check for any malicious code submissions in patch discussions.&lt;/p>
 &lt;h2 id="desired-outcomes-and-benefits">Desired Outcomes and Benefits&lt;/h2>

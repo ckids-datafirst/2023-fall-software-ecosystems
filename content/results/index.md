@@ -6,20 +6,32 @@ editable: true
 share: false
 ---
 
-This page contains key sections of the **Final Report** for the project focused on results to date.  It should be no more than 2 pages long.  An initial draft can be created at any point during the project, and can be refined as the project progresses.
-
 ## System and Model Performance
-
-Show the performance of the best system and model(s) developed, showing clearly the performance metrics and improvements over the baseline system as appropriate.  Create visualizations that show clearly these results.
+<div align="center">
+  <img src="message_extraction.png" />
+  <p>Clean Message Extraction</p>
+  <br>
+  <img src="match_maintainer.png" />
+  <p>Matching Each Message with Its Maintainer Group</p>
+  <br>
+  <img src="time_improvement.png" />
+  <p>Time Cost</p>
+  <br>
+  <img src="keyword_extraction.png" />
+  <p>Keyword Extraction</p>
+  <br>
+  <img src="text_summarization.png" />
+  <p>Text Summarization</p>
+</div>
 
 ## Discussion of Findings
 
-Offer a discussion of the main findings using the system developed. Put the results in the context of the original problem statement and the questions that were posed.
-
-Discuss any unexpected results, and potential explanations.
-
-Enumerate (ideally in bullets) the most important findings, and their impact on your project goals.
+1) Message Extraction: After the cleaning process, the message that contains incomplete content is reduced to 1.2%.
+2) Message Matching: The accuracy of finding the correct matching of the maintainer group is increased by 16%.
+3) Time Cost: The use of time to match 174242 messages was reduced from 117 minutes to 28 minutes by using a hash table to reduce repeated matching.
+4) Keyword Extraction: Overall, KeyLLM with GPT4 has the highest performance. An interesting finding is that the models from hugging faces have high precision but low recall. This indicates they are able to recognize desired keywords but are incapable of extracting all of them.
+5) Text Summarization: According to the results, GPT4 performs the best.
 
 ## Limitations and Future Work
 
-Discuss any limitations of the work to date, how these limitations could be addressed in future work.  Discuss what lines of work are most promising given the understanding of the problem and the data gained throughout the project.
+The results show that GPT4 has excellent performance on both tasks. We will use it for topic modeling in the future. One limitation, however, is the cost of the model. With millions of messages on mailing lists, the cost of analyzing all of them can be huge. An alternative is Llama2, since it has good performance and is free to use.

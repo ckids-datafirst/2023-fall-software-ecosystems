@@ -9,6 +9,8 @@ sections:
     content:
       title: |
         Analyzing Open Source Software Ecosystems
+      image:
+        filename: open_source.jpg
       text: |    
         This [Fall 2023](https://ckids-datafirst.github.io/website/editions/2023-fall/#dates) [DataFirst project](https://ckids-datafirst.github.io/website/) attempts to [analyze code commits(source code and patch discussions) of open-source software to better understand them](problem-statement).
         Gaining a deeper understanding of OSS ecosystems will enable the open-source community to identify potential vulnerabilities, and define better development practices.

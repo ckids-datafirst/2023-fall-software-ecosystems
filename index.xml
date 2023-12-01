@@ -33,12 +33,30 @@
 &lt;h2 id="use-case-scenario">Use Case Scenario&lt;/h2>
 &lt;p>Maintainers of open source software can use our project to check for any malicious code submissions in patch discussions.&lt;/p>
 &lt;h2 id="desired-outcomes-and-benefits">Desired Outcomes and Benefits&lt;/h2>
-&lt;p>Topic modeling: We will analyze the messages under each maintainer group and add labels to each of them. Malicious code commit can become more obvious when it doesn&amp;rsquo;t match with the label of the maintainer group.&lt;/p></description></item><item><title>Results</title><link>https://ckids-datafest.github.io/2023-fall-software-ecosystems/results/</link><pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate><guid>https://ckids-datafest.github.io/2023-fall-software-ecosystems/results/</guid><description>&lt;p>This page contains key sections of the &lt;strong>Final Report&lt;/strong> for the project focused on results to date. It should be no more than 2 pages long. An initial draft can be created at any point during the project, and can be refined as the project progresses.&lt;/p>
-&lt;h2 id="system-and-model-performance">System and Model Performance&lt;/h2>
-&lt;p>Show the performance of the best system and model(s) developed, showing clearly the performance metrics and improvements over the baseline system as appropriate. Create visualizations that show clearly these results.&lt;/p>
+&lt;p>Topic modeling: We will analyze the messages under each maintainer group and add labels to each of them. Malicious code commit can become more obvious when it doesn&amp;rsquo;t match with the label of the maintainer group.&lt;/p></description></item><item><title>Results</title><link>https://ckids-datafest.github.io/2023-fall-software-ecosystems/results/</link><pubDate>Thu, 28 Jun 2018 00:00:00 +0000</pubDate><guid>https://ckids-datafest.github.io/2023-fall-software-ecosystems/results/</guid><description>&lt;h2 id="system-and-model-performance">System and Model Performance&lt;/h2>
+&lt;div align="center">
+&lt;img src="message_extraction.png" />
+&lt;p>Clean Message Extraction&lt;/p>
+&lt;br>
+&lt;img src="match_maintainer.png" />
+&lt;p>Matching Each Message with Its Maintainer Group&lt;/p>
+&lt;br>
+&lt;img src="time_improvement.png" />
+&lt;p>Time Cost&lt;/p>
+&lt;br>
+&lt;img src="keyword_extraction.png" />
+&lt;p>Keyword Extraction&lt;/p>
+&lt;br>
+&lt;img src="text_summarization.png" />
+&lt;p>Text Summarization&lt;/p>
+&lt;/div>
 &lt;h2 id="discussion-of-findings">Discussion of Findings&lt;/h2>
-&lt;p>Offer a discussion of the main findings using the system developed. Put the results in the context of the original problem statement and the questions that were posed.&lt;/p>
-&lt;p>Discuss any unexpected results, and potential explanations.&lt;/p>
-&lt;p>Enumerate (ideally in bullets) the most important findings, and their impact on your project goals.&lt;/p>
+&lt;ol>
+&lt;li>Message Extraction: After the cleaning process, the message that contains incomplete content is reduced to 1.2%.&lt;/li>
+&lt;li>Message Matching: The accuracy of finding the correct matching of the maintainer group is increased by 16%.&lt;/li>
+&lt;li>Time Cost: The use of time to match 174242 messages was reduced from 117 minutes to 28 minutes by using a hash table to reduce repeated matching.&lt;/li>
+&lt;li>Keyword Extraction: Overall, KeyLLM with GPT4 has the highest performance. An interesting finding is that the models from hugging faces have high precision but low recall. This indicates they are able to recognize desired keywords but are incapable of extracting all of them.&lt;/li>
+&lt;li>Text Summarization: According to the results, GPT4 performs the best.&lt;/li>
+&lt;/ol>
 &lt;h2 id="limitations-and-future-work">Limitations and Future Work&lt;/h2>
-&lt;p>Discuss any limitations of the work to date, how these limitations could be addressed in future work. Discuss what lines of work are most promising given the understanding of the problem and the data gained throughout the project.&lt;/p></description></item></channel></rss>
+&lt;p>The results show that GPT4 has excellent performance on both tasks. We will use it for topic modeling in the future. One limitation, however, is the cost of the model. With millions of messages on mailing lists, the cost of analyzing all of them can be huge. An alternative is Llama2, since it has good performance and is free to use.&lt;/p></description></item></channel></rss>

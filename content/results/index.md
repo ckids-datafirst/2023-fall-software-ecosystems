@@ -10,16 +10,12 @@ share: false
 <div align="center">
   <img src="message_extraction.png" />
   <p>Clean Message Extraction</p>
-  <br>
   <img src="match_maintainer.png" />
   <p>Matching Each Message with Its Maintainer Group</p>
-  <br>
   <img src="time_improvement.png" />
   <p>Time Cost</p>
-  <br>
   <img src="keyword_extraction.png" />
   <p>Keyword Extraction</p>
-  <br>
   <img src="text_summarization.png" />
   <p>Text Summarization</p>
 </div>
@@ -34,4 +30,6 @@ share: false
 
 ## Limitations and Future Work
 
-The results show that GPT4 has excellent performance on both tasks. We will use it for topic modeling in the future. One limitation, however, is the cost of the model. With millions of messages on mailing lists, the cost of analyzing all of them can be huge. An alternative is Llama2, since it has good performance and is free to use.
+The results show that GPT4 has excellent performance on both tasks. We will use it for topic modeling in the future.
+
+One limitation, however, is the cost of the model. With millions of messages on mailing lists, the cost of analyzing all of them can be huge. An alternative is Llama2, since it has good performance and is free to use.
